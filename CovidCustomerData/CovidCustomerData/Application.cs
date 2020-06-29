@@ -64,7 +64,7 @@ namespace CovidCustomerData
                 {
                     try
                     {
-                        var Success = SaveDataToFile($"{FullName},{PhoneNumber}");
+                        var Success = SaveDataToFile($"{FullName},{PhoneNumber},{DateTime.Now.ToString("yyyyMMddHHmmss")}");
 
                         if(!Success)
                         {
